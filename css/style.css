@@ -1,0 +1,263 @@
+/*GENEREL LAYOUT*/
+html{
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 14px;
+}
+body{
+    background-color: whitesmoke;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+p {
+    line-height: 30px;
+}
+
+
+.myanmar_bridge{
+    border-radius: 8px;
+    width: 100%;
+}
+
+picture img{
+    max-width: 100%;
+    height: auto;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.pakkerejser ul{
+    list-style-type: none;
+    line-height: 20px;
+}
+
+.pakkerejser b{
+    margin-left: 40px;
+}
+/*FOOTER*/
+
+.footer {
+  flex-shrink: 0; 
+  padding: 20px;
+  border-radius: 8px;
+  background: #878e3a;
+  text-align: center;
+}
+
+.footer div{
+    color: white;
+    line-height: 30px;
+    margin: 2%;
+}
+
+/*regler kun for ipad og under*/
+@media (max-width: 767px){
+.rejseguide{
+    display: none;
+}
+}
+
+/*Til alt over ipad*/
+@media (min-width: 768px){
+    .myanmar_bridge{
+        width: 50%;
+        float: right;
+        border-radius: 8px;
+        margin: 5%
+    }
+    
+    h1{
+        font-size: 50px;
+    }
+article{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+    }
+
+.rejseguide{
+    float: right;
+    border-radius: 50%;
+}
+
+.footer div{
+    display: inline-block;
+}
+
+.rejseplan_alt{
+    display: flex;
+}
+    
+.rejseplan{
+        flex: 1;
+    }
+    
+.rejseplan1{
+    margin-top: 60px;
+    margin-left: 60px;
+    background-color: rgb(135,142,58,0.5);
+    border-radius: 8px;
+    padding-top: 20px;
+    width: 10%;
+        
+    }
+
+}
+
+
+/*MENU BAR*/
+
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: auto;
+    background: #878e3a;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.header-left,
+.header-right{
+    position: relative;
+    color: white;
+    float: left;
+}
+.header-left{
+    width: 30%;
+}
+.header-right label{
+    position: absolute;
+    top: -3.7em;
+    right: 0;
+    cursor: pointer;
+}
+.header-right span{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    background: #878e3a;
+    -webkit-transition: all .3s ease;
+}
+.header-right span:hover{
+    background: rgba(255,255,255,.6);
+}
+.header-right span:before,
+.header-right span:after{
+    content: '';
+    position: absolute;
+    width: 2em;
+    height: .5em;
+    top: 4px;
+    left: 0;
+    background: white;
+}
+.header-right span:after{
+    top: 14px;
+}
+.header-right{
+    width: 70%;
+    text-align: center;
+    top: 50%;
+     
+}
+#open{
+    display: none;
+}
+.clearfix img{
+    margin: 2%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav>a{
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 40px;
+    padding: 0 2em;
+    -webkit-transition: all .3s ease;
+}
+nav>a:hover{
+    background: white;
+    color: black;
+    border-radius: 8px;
+    
+}
+.hidden-desktop{
+    display: none;
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 768px) {
+    body{
+        padding: 0 .5em;
+    }
+    .container{
+        width: 90%;
+    }
+    nav{
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: all .3s ease;
+    }
+    input[type="checkbox"]:checked + nav{
+        height: 205px;
+    }
+    nav>a{
+        padding: 0 1em;
+        display: block;
+        border-bottom: solid 1px rgba(255,255,255,.1);
+    }
+    h1{
+        padding: .5em 0;
+    }
+    .header-left,
+    .header-right{
+        width: 100%;
+        text-align: center;
+    }
+    .section-left,
+    .section-right{
+        width: 100%;
+    }
+    .section-left{
+        text-align: center;
+        padding: 1em 0;
+    }
+    .section-right{
+        text-align: center;
+        padding: 1em 0 2em;
+    }
+    .section-title{
+        font-size: 2.4em;
+        margin-bottom: 0;
+    }
+    .section-tagline{
+        font-size: 1em;
+    }
+    .learn-more{
+        display: table;
+        margin: 0 auto;
+    }
+    .hidden-desktop{
+        display: block;
+    }
+}
